@@ -7,6 +7,6 @@ part 'child_side_state.dart';
 class ChildSideBloc extends Bloc<ChildSideEvent, ChildSideState> {
   ChildSideBloc() : super(ChildSideInitial()) {
     on<GetNotifications>((event, emit) => emit(ChildSideNotification()));
-    on<GetAppList>((event, emit) => emit(ChildSideAppList()));
+    on<GetAppList>((event, emit) => emit(ChildSideAppList()) );
   }
 }
